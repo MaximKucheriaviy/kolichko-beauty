@@ -1,5 +1,6 @@
 import { StyledHeader } from "./StyledHeader";
 import { Container } from "../Container/Container";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -8,19 +9,19 @@ export const Header = () => {
         <nav>
           <ul className="navigation">
             <li>
-              <a href="/">Послуги</a>
+              <Link href="/">Послуги</Link>
             </li>
             <li>
-              <a href="/">Про клініку </a>
+              <Link href="/">Про клініку </Link>
             </li>
             <li>
-              <a href="/">Засновники</a>
+              <Link href="/">Засновники</Link>
             </li>
             <li>
-              <a href="/">Ціни</a>
+              <Link href="/">Ціни</Link>
             </li>
             <li>
-              <a href="/">Контакти</a>
+              <Link href="/">Контакти</Link>
             </li>
           </ul>
         </nav>

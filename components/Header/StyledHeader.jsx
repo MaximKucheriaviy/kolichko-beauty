@@ -1,12 +1,13 @@
 import styled from "@emotion/styled";
 
 export const StyledHeader = styled.header`
-  background: rgba(0, 113, 149, 0.5);
+  background: rgba(0, 47, 149, 0.884);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
+  backdrop-filter: blur(10px);
   & .navigation {
     display: flex;
     height: 80px;

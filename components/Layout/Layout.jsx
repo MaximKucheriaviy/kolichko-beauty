@@ -6,7 +6,7 @@ export const Layout = ({ children }) => {
   return (
     <StyledLayout>
       <Header />
-      {children}
+      <main>{children}</main>
     </StyledLayout>
   );
 };
