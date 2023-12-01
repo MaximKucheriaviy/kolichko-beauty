@@ -312,7 +312,7 @@ export const StyledContactsSection = styled.section`
     line-height: normal;
   }
   & .tel {
-    color: #563400;
+    color: #341f00;
 
     font-family: Miama;
     font-size: 40px;
