@@ -2,10 +2,12 @@ import { Layout } from "@/components/Layout/Layout";
 import {
   StyledHeroSection,
   StyledAboutSection,
+  StyledServiceSection,
 } from "@/components/StyledPages/StyledMain";
 import Image from "next/image";
 import { Container } from "@mui/material";
 import Link from "next/link";
+import Carousel from "react-material-ui-carousel";
 
 export default function Home() {
   return (
@@ -41,6 +43,25 @@ export default function Home() {
           </div>
         </Container>
       </StyledAboutSection>
+      <StyledServiceSection>
+        <Container className="container">
+          <div className="titleDiv">
+            <h2 className="title">Послуги, які ми надаємо</h2>
+          </div>
+        </Container>
+        <div className="textBackgound">
+          <Container>
+            <Carousel>
+              <div>
+                <div className="photo photo1"></div>
+                <div className="photo photo2"></div>
+                <div className="photo photo3"></div>
+                <div className="photo photo4"></div>
+              </div>
+            </Carousel>
+          </Container>
+        </div>
+      </StyledServiceSection>
     </Layout>
   );
 }

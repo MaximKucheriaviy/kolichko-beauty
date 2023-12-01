@@ -87,3 +87,25 @@ export const StyledAboutSection = styled.section`
     line-height: normal;
   }
 `;
+
+export const StyledServiceSection = styled.section`
+  background-image: url("/background.jpg");
+  & .titleDiv {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  & .title {
+    text-align: center;
+    color: #eef157;
+
+    font-family: Cormorant;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  & .textBackgound {
+    background-color: blue;
+  }
+`;
