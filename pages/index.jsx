@@ -5,11 +5,14 @@ import {
   StyledServiceSection,
   StyledMastersSection,
   StyledFoundersSection,
+  StyledGalerySection,
+  StyledContactsSection,
 } from "@/components/StyledPages/StyledMain";
 import Image from "next/image";
 import { Container } from "@mui/material";
 import Link from "next/link";
 import Carousel from "react-material-ui-carousel";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -102,7 +105,7 @@ export default function Home() {
         <Container className="container">
           <h2 className="title">Наші спеціалісти</h2>
           <div>
-            <Carousel>
+            <Carousel indicators={false}>
               <div className="carouselItem">
                 <div className="masterInfo">
                   <Image
@@ -150,6 +153,70 @@ export default function Home() {
           </div>
         </Container>
       </StyledFoundersSection>
+      <StyledGalerySection>
+        <Container>
+          <h2>Галерея</h2>
+          <Carousel indicators={false} className="carousel">
+            <div className="galeryItem">
+              <div className="imageThumb">
+                <Image
+                  src="/galery1.jpg"
+                  alt="galery"
+                  width={496}
+                  height={496}
+                />
+              </div>
+              <div className="imageThumb">
+                <Image
+                  src="/galery2.jpg"
+                  alt="galery"
+                  width={496}
+                  height={496}
+                />
+              </div>
+            </div>
+            <div className="galeryItem">
+              <div className="imageThumb">
+                <Image
+                  src="/galery2.jpg"
+                  alt="galery"
+                  width={496}
+                  height={496}
+                />
+              </div>
+              <div className="imageThumb">
+                <Image
+                  src="/galery1.jpg"
+                  alt="galery"
+                  width={496}
+                  height={496}
+                />
+              </div>
+            </div>
+          </Carousel>
+        </Container>
+      </StyledGalerySection>
+      <StyledContactsSection>
+        <Container className="container">
+          <p className="poster">Чекаємо вас за адресою:</p>
+          <Link
+            className="geo"
+            href="https://maps.app.goo.gl/WEQttbMfBu1XEH4LA"
+          >
+            м.Київ вул.Хрещатик 22
+          </Link>
+          <Link className="tel" href="tel:+380978588077">
+            тел:+38(097)-858-80-77
+          </Link>
+          <Link
+            className="insta"
+            href="https://www.instagram.com/kopychkoandko/?igshid=NzZlODBkYWE4Ng%3D%3D"
+          >
+            <FaInstagram />
+            kopychkoandko
+          </Link>
+        </Container>
+      </StyledContactsSection>
     </Layout>
   );
 }
