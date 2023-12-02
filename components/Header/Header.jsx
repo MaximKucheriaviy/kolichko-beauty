@@ -1,5 +1,6 @@
 import { StyledHeader } from "./StyledHeader";
 import { Container } from "../Container/Container";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Link from "next/link";
 
 export const Header = () => {
@@ -9,7 +10,7 @@ export const Header = () => {
         <nav>
           <ul className="navigation">
             <li>
-              <Link href="/">Послуги</Link>
+              <AnchorLink href="#service">Послуги</AnchorLink>
             </li>
             <li>
               <Link href="/">Про клініку </Link>

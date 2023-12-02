@@ -1,6 +1,6 @@
 import { Layout } from "@/components/Layout/Layout";
+import { Hero } from "@/components/Hero/Hero";
 import {
-  StyledHeroSection,
   StyledAboutSection,
   StyledServiceSection,
   StyledMastersSection,
@@ -17,21 +17,7 @@ import { FaInstagram } from "react-icons/fa";
 export default function Home() {
   return (
     <Layout>
-      <StyledHeroSection className="hero">
-        <Container className="heroContainer">
-          <Image src={"/logo.png"} alt="logo" width={185} height={79} />
-          <p className="invite">Ласкаво просимо</p>
-          <Image src={"/textLogo.png"} alt="logo" width={691} height={241} />
-          <div className="buttonDiv">
-            <Link href="/" className="blueButton">
-              Перелік послуг
-            </Link>
-            <Link href="/" className="whiteButton">
-              Галерея
-            </Link>
-          </div>
-        </Container>
-      </StyledHeroSection>
+      <Hero />
       <StyledAboutSection className="about">
         <Container className="container">
           <div className="textDiv">
@@ -48,7 +34,7 @@ export default function Home() {
           </div>
         </Container>
       </StyledAboutSection>
-      <StyledServiceSection>
+      <StyledServiceSection id="service">
         <Container className="container">
           <h2 className="title">Послуги, які ми надаємо</h2>
         </Container>
