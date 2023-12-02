@@ -18,6 +18,7 @@ export const StyledHeroSection = styled.section`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    height: 79px;
   }
   & .buttonDiv {
     display: flex;

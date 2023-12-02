@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const StyledServiceSection = styled.section`
   & .titleDiv {
-    height: 295px;
+    height: 235px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(

@@ -1,6 +1,6 @@
 import { Container } from "../Container/Container";
 import { StyledHeroSection } from "./StyledHero";
-import Link from "next/link";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Image from "next/image";
 export const Hero = () => {
   return (
@@ -10,12 +10,12 @@ export const Hero = () => {
         <p className="invite">Ласкаво просимо</p>
         <Image src={"/textLogo.png"} alt="logo" width={691} height={241} />
         <div className="buttonDiv">
-          <Link href="/" className="blueButton">
+          <AnchorLink href="#service" offset={60} className="blueButton">
             Перелік послуг
-          </Link>
-          <Link href="/" className="whiteButton">
+          </AnchorLink>
+          <AnchorLink href="#galery" offset={70} className="whiteButton">
             Галерея
-          </Link>
+          </AnchorLink>
         </div>
       </Container>
     </StyledHeroSection>

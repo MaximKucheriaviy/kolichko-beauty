@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export const Contacts = () => {
   return (
-    <StyledContactsSection>
+    <StyledContactsSection id="contacts">
       <Container className="container">
         <p className="poster">Чекаємо вас за адресою:</p>
         <Link className="geo" href="https://maps.app.goo.gl/WEQttbMfBu1XEH4LA">

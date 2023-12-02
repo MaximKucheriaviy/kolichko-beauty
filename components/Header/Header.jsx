@@ -28,7 +28,9 @@ export const Header = () => {
               <Link href="/">Ціни</Link>
             </li>
             <li>
-              <Link href="/">Контакти</Link>
+              <AnchorLink href="#contacts" offset={40}>
+                Контакти
+              </AnchorLink>
             </li>
           </ul>
         </nav>

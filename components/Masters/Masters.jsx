@@ -11,30 +11,26 @@ export const Masters = () => {
         <div>
           <Carousel indicators={false}>
             <div className="carouselItem">
-              <div className="masterInfo">
+              <div className="iamgeThumb">
                 <Image
                   src="/masterLorem.jpg"
                   alt="master"
-                  width={302}
-                  height={303}
+                  width={420}
+                  height={441}
                 />
-                <h3>Ірина</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Eget porta sed purus
-                  eget.
-                </p>
               </div>
-              <div className="masterInfo">
-                <Image
-                  src="/masterLorem.jpg"
-                  alt="master"
-                  width={302}
-                  height={303}
-                />
-                <h3>Ірина</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Eget porta sed purus
-                  eget.
+              <div className="textThumb">
+                <h3>Олена</h3>
+                <p className="subtitle">Дермато-венеролог</p>
+                <div className="info">
+                  <p>7 років роботи </p>
+                  <p>100+ клієнтів</p>
+                </div>
+                <p className="text">
+                  Lorem ipsum dolor sit amet consectetur. Rhoncus velit ut at
+                  penatibus ac. Velit arcu purus facilisi varius. Magna nunc
+                  porttitor risus arcu congue adipiscing ac rutrum eget.
+                  Scelerisque viverra facilisi tristique enim sagittis ac sed.
                 </p>
               </div>
             </div>

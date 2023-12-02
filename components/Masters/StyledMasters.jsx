@@ -3,53 +3,72 @@ import styled from "@emotion/styled";
 export const StyledMastersSection = styled.section`
   background-image: url("/background.jpg");
   padding-top: 56px;
-  padding-bottom: 39px;
-  & .container {
-    display: grid;
-    grid-template-columns: 436px 1fr;
-    grid-column-gap: 103px;
-    align-items: center;
-  }
+
   & .title {
-    width: 436px;
-    color: #eef157;
+    color: #ffda93;
+
     font-family: Miama;
-    font-size: 64px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 22px;
+    height: 79px;
   }
   & .carouselItem {
-    display: flex;
+    display: grid;
+    grid-template-columns: 420px 410px;
     justify-content: center;
-    gap: 64px;
-    & img {
-      width: 241px;
-      height: 242px;
-      border-radius: 50%;
-      border-top: 10px solid #3763ff;
-      border-right: 10px solid #3763ff;
+    grid-column-gap: 87px;
+
+    & .iamgeThumb {
+      display: flex;
+      align-items: flex-end;
     }
     & h3 {
-      color: #f6c15b;
+      color: #ffda93;
 
       font-family: Cormorant;
       font-size: 36px;
-      font-style: normal;
-      font-weight: 600;
+      font-style: italic;
+      font-weight: 700;
       line-height: normal;
-      text-align: center;
     }
-    & p {
-      color: #f6c15b;
+    & .subtitle {
+      color: #ffda93;
 
       font-family: Cormorant;
-      font-size: 20px;
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 700;
+      line-height: normal;
+    }
+    & .info {
+      display: flex;
+      gap: 53px;
+      margin-top: 35px;
+
+      & p {
+        color: #ffda93;
+
+        font-family: Cormorant;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+    & .text {
+      margin-top: 24px;
+
+      color: #ffda93;
+
+      font-family: Cormorant;
+      font-size: 24px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
-      width: 234px;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 `;

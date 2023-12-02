@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const Galery = () => {
   return (
-    <StyledGalerySection>
+    <StyledGalerySection id="galery">
       <Container>
         <h2>Галерея</h2>
         <Carousel indicators={false} className="carousel">
