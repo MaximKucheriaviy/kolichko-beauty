@@ -5,9 +5,11 @@ import Carousel from "react-material-ui-carousel";
 export const Serice = () => {
   return (
     <StyledServiceSection id="service">
-      <Container className="container">
-        <h2 className="title">Послуги, які ми надаємо</h2>
-      </Container>
+      <div className="titleDiv">
+        <Container className="container">
+          <h2 className="title">Послуги, які ми надаємо</h2>
+        </Container>
+      </div>
       <div className="textBackgound">
         <Container className="courouselContainer">
           <Carousel indicators={false}>

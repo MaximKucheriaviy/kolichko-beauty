@@ -1,21 +1,42 @@
 import styled from "@emotion/styled";
 
 export const StyledServiceSection = styled.section`
-  background-image: url("/background.jpg");
-
+  & .titleDiv {
+    height: 295px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+        90deg,
+        rgba(217, 217, 217, 0.12) 1.33%,
+        rgba(217, 217, 217, 0.14) 39.87%,
+        rgba(217, 217, 217, 0.86) 76.36%
+      ),
+      url("/serviceBack.png");
+    display: flex;
+    align-items: center;
+  }
   & .title {
-    text-align: center;
-    color: #eef157;
+    color: #341f00;
 
-    font-family: Cormorant;
-    font-size: 64px;
+    font-family: Miama;
+    font-size: 48px;
     font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: right;
+
+    width: 336px;
+    margin-left: auto;
   }
 
   & .textBackgound {
-    background-image: url("/courouselBackground.png");
+    background: linear-gradient(
+      106deg,
+      rgba(255, 223, 107, 0.4) 0%,
+      rgba(255, 221, 124, 0.26) 55.07%,
+      rgba(242, 163, 10, 0.53) 76.46%
+    );
+
     padding-bottom: 75px;
     padding-top: 50px;
     & .carouselItem {
@@ -25,18 +46,18 @@ export const StyledServiceSection = styled.section`
     }
     & .photo {
       width: 229px;
-      height: 238px;
+      height: 304px;
       border-radius: 20px;
       background-color: gray;
       background-image: url("/ImageLor.jpg");
-      background-size: 110%;
+      background-size: 140%;
       background-repeat: no-repeat;
       background-position: center;
       overflow: hidden;
       transition-property: background-size;
       transition-duration: 700ms;
       &:hover {
-        background-size: 130%;
+        background-size: 160%;
         p {
           background-color: transparent;
         }
