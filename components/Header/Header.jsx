@@ -10,13 +10,19 @@ export const Header = () => {
         <nav>
           <ul className="navigation">
             <li>
-              <AnchorLink href="#service">Послуги</AnchorLink>
+              <AnchorLink href="#service" offset={80}>
+                Послуги
+              </AnchorLink>
             </li>
             <li>
-              <Link href="/">Про клініку </Link>
+              <AnchorLink href="#about" offset="80">
+                Про клініку
+              </AnchorLink>
             </li>
             <li>
-              <Link href="/">Засновники</Link>
+              <AnchorLink href="#funders" offset={50}>
+                Засновники
+              </AnchorLink>
             </li>
             <li>
               <Link href="/">Ціни</Link>
