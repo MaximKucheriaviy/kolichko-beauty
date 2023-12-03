@@ -6,7 +6,7 @@ export const StyledFooter = styled.footer`
   & .container {
     height: 32px;
     @media screen and (min-width: 1280px) {
-      height: 80px;
+      height: auto;
     }
     width: auto;
     display: grid;
@@ -20,10 +20,10 @@ export const StyledFooter = styled.footer`
       display: block;
       height: 15px;
       width: 36px;
-    }
-    @media screen and (min-width: 1280px) {
-      height: auto;
-      width: auto;
+      @media screen and (min-width: 1280px) {
+        height: auto;
+        width: auto;
+      }
     }
   }
   & .center {
@@ -33,10 +33,10 @@ export const StyledFooter = styled.footer`
     & img {
       width: 43px;
       height: 18px;
-    }
-    @media screen and (min-width: 1280px) {
-      height: auto;
-      width: auto;
+      @media screen and (min-width: 1280px) {
+        height: auto;
+        width: auto;
+      }
     }
   }
   & .right {

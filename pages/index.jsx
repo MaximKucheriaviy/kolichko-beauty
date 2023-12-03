@@ -12,11 +12,11 @@ export default function Home() {
     <Layout>
       <Hero />
       <About />
-      <Serice />
+      {/* <Serice />
       <Masters />
       <Funders />
       <Galery />
-      <Contacts />
+      <Contacts /> */}
     </Layout>
   );
 }

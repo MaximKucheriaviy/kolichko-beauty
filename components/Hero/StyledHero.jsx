@@ -7,32 +7,50 @@ export const StyledHeroSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 160px;
+    padding-top: 130px;
+    @media screen and (min-width: 1280px) {
+      padding-top: 160px;
+    }
     padding-bottom: 82px;
   }
-  & .invite {
-    color: #ffda93;
 
-    font-family: Miama;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    height: 79px;
+  & .textLogo {
+    margin-top: 40px;
+
+    width: 271px;
+    height: 115px;
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 0px;
+
+      width: auto;
+      height: auto;
+    }
   }
   & .buttonDiv {
     display: flex;
-    gap: 88px;
-    margin-top: 53px;
+    gap: 34px;
+    margin-top: 64px;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      margin-top: 53px;
+      gap: 88px;
+    }
     & a {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 329px;
-      height: 48px;
+      width: 268px;
+      height: 47px;
+      @media screen and (min-width: 768px) {
+        width: 329px;
+        height: 48px;
+        font-size: 32px;
+      }
 
       font-family: Cormorant;
-      font-size: 32px;
+      font-size: 26px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
