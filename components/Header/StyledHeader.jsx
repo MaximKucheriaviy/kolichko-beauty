@@ -3,12 +3,34 @@ import styled from "@emotion/styled";
 export const StyledHeader = styled.header`
   background: rgba(0, 47, 149, 0.884);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  position: fixed;
+  // position: fixed;
   z-index: 1000;
   top: 0;
   left: 0;
   width: 100vw;
   backdrop-filter: blur(10px);
+  & .burgerButton {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: transparent;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  & .burger {
+    width: 27px;
+    height: 24px;
+    display: block;
+    fill: #ffda93;
+  }
+  & .inlineNavigation {
+    display: none;
+  }
   & .navigation {
     display: flex;
     height: 80px;

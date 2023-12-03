@@ -7,7 +7,6 @@ export const Hero = () => {
     <StyledHeroSection className="hero">
       <Container className="heroContainer">
         <Image src={"/logo.png"} alt="logo" width={185} height={79} />
-        <p className="invite">Ласкаво просимо</p>
         <Image src={"/textLogo.png"} alt="logo" width={691} height={241} />
         <div className="buttonDiv">
           <AnchorLink href="#service" offset={60} className="blueButton">

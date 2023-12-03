@@ -2,12 +2,16 @@ import { StyledHeader } from "./StyledHeader";
 import { Container } from "../Container/Container";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Link from "next/link";
+import { FaBars } from "react-icons/fa";
 
 export const Header = () => {
   return (
     <StyledHeader>
       <Container>
-        <nav>
+        <button className="burgerButton">
+          <FaBars className="burger" />
+        </button>
+        <nav className="inlineNavigation">
           <ul className="navigation">
             <li>
               <AnchorLink href="#service" offset={80}>

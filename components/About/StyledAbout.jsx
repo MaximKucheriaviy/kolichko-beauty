@@ -1,9 +1,16 @@
 import styled from "@emotion/styled";
 
 export const StyledAboutSection = styled.section`
-  background-image: url("/aboutBackground.jpg");
+  background-image: linear-gradient(
+      106deg,
+      rgba(255, 223, 107, 0) 0%,
+      rgba(255, 221, 124, 0.21) 55.07%,
+      rgba(255, 218, 147, 0.59) 76.46%
+    ),
+    url("/background.jpg");
+
   & .title {
-    color: #563400;
+    color: #fcd996;
 
     font-family: Miama;
     font-size: 64px;
@@ -23,7 +30,7 @@ export const StyledAboutSection = styled.section`
   & .text {
     margin-top: 59px;
     width: 669px;
-    color: #563400;
+    color: #fcd996;
 
     font-family: Cormorant Upright;
     font-size: 32px;

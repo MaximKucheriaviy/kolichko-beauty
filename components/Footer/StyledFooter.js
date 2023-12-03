@@ -2,8 +2,11 @@ import styled from "@emotion/styled";
 
 export const StyledFooter = styled.footer`
   background-image: url("/background.jpg");
+  height: 32px;
   & .container {
-    height: 80px;
+    @media screen and (min-width: 1280px) {
+      height: 80px;
+    }
     width: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,11 +15,27 @@ export const StyledFooter = styled.footer`
   & .left {
     display: flex;
     align-items: center;
+    & img {
+      height: 15px;
+      width: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+      height: auto;
+      width: auto;
+    }
   }
   & .center {
     display: flex;
     justify-content: center;
     align-items: center;
+    & img {
+      width: 43px;
+      height: 18px;
+    }
+    @media screen and (min-width: 1280px) {
+      height: auto;
+      width: auto;
+    }
   }
   & .right {
     display: flex;
