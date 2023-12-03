@@ -13,19 +13,31 @@ export const StyledAboutSection = styled.section`
     color: #fcd996;
 
     font-family: Miama;
-    font-size: 64px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-size: 24px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 64px;
+      text-align: left;
+    }
   }
   & .container {
-    padding-right: 0;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 69px;
+    padding-top: 48px;
+    @media screen and (min-width: 768px) {
+      padding-right: 0;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 69px;
+      padding-top: 0;
+    }
   }
   & .textDiv {
-    padding-top: 96px;
+    @media screen and (min-width: 768px) {
+      padding-top: 96px;
+    }
   }
   & .text {
     margin-top: 59px;
