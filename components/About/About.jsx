@@ -14,7 +14,7 @@ export const About = () => {
             mauris faucibus nibh
           </p>
         </div>
-        <div>
+        <div className="image">
           <Image src="/girl.png" alt="girl" width={441} height={505} />
         </div>
       </Container>

@@ -34,6 +34,21 @@ export const StyledAboutSection = styled.section`
       padding-top: 0;
     }
   }
+
+  & .image {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
+    & img {
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        width: auto;
+      }
+
+      height: auto;
+    }
+  }
   & .textDiv {
     @media screen and (min-width: 768px) {
       padding-top: 96px;
@@ -41,13 +56,16 @@ export const StyledAboutSection = styled.section`
   }
   & .text {
     margin-top: 59px;
-    width: 669px;
     color: #fcd996;
 
     font-family: Cormorant Upright;
-    font-size: 32px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+      width: 669px;
+    }
   }
 `;
