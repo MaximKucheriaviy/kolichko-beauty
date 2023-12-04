@@ -7,10 +7,10 @@ import { FaBars } from "react-icons/fa";
 export const Header = () => {
   return (
     <StyledHeader>
+      <button className="burgerButton">
+        <FaBars className="burger" />
+      </button>
       <Container>
-        <button className="burgerButton">
-          <FaBars className="burger" />
-        </button>
         <nav className="inlineNavigation">
           <ul className="navigation">
             <li>
@@ -29,7 +29,7 @@ export const Header = () => {
               </AnchorLink>
             </li>
             <li>
-              <Link href="/">Ціни</Link>
+              <Link href="/price-list">Ціни</Link>
             </li>
             <li>
               <AnchorLink href="#contacts" offset={40}>

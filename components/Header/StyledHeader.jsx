@@ -17,6 +17,7 @@ export const StyledHeader = styled.header`
   & .burgerButton {
     display: block;
     margin: 0;
+    margin-right: 30px;
     padding: 0;
     border: none;
     background-color: transparent;
