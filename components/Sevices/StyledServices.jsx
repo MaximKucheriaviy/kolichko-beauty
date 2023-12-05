@@ -51,20 +51,38 @@ export const StyledServiceSection = styled.section`
         display: block;
       }
     }
-    padding-bottom: 75px;
-    padding-top: 50px;
+    & .carouselMobile {
+      display: block;
+      @media screen and (min-width: 1280px) {
+        display: none;
+      }
+    }
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 75px;
+      padding-top: 50px;
+    }
     & .carouselItem {
+      padding-top: 10px;
       display: flex;
       justify-content: center;
       gap: 40px;
     }
     & .photo {
-      width: 229px;
-      height: 304px;
-      border-radius: 20px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-size: 100%;
+      @media screen and (min-width: 1280px) {
+        width: 229px;
+        height: 304px;
+        background-size: 140%;
+      }
+      /* border-radius: 20px; */
+      box-shadow: 0px 0px 10px black;
       background-color: gray;
       background-image: url("/ImageLor.jpg");
-      background-size: 140%;
       background-repeat: no-repeat;
       background-position: center;
       overflow: hidden;
@@ -72,6 +90,9 @@ export const StyledServiceSection = styled.section`
       transition-duration: 700ms;
       &:hover {
         background-size: 160%;
+        @media screen and (min-width: 1280px) {
+          background-size: 160%;
+        }
         p {
           background-color: transparent;
         }
@@ -89,6 +110,10 @@ export const StyledServiceSection = styled.section`
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+
+        @media screen and (min-width: 1280px) {
+          font-size: 36px;
+        }
 
         background-color: rgba(217, 217, 217, 0.5);
         transition-property: background-color;

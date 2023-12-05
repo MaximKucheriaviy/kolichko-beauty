@@ -11,26 +11,17 @@ export const StyledHeroSection = styled.section`
     @media screen and (min-width: 1280px) {
       padding-top: 160px;
     }
-    padding-bottom: 82px;
+    padding-bottom: 105px;
   }
-
-  & .textLogo {
-    margin-top: 40px;
-
-    width: 271px;
-    height: 115px;
-
-    @media screen and (min-width: 1280px) {
-      margin-top: 0px;
-
-      width: auto;
-      height: auto;
-    }
+  & .logoDiv {
+    width: 272px;
+    margin-left: auto;
+    margin-right: auto;
   }
   & .buttonDiv {
     display: flex;
     gap: 34px;
-    margin-top: 64px;
+    margin-top: 98px;
     flex-direction: column;
     @media screen and (min-width: 768px) {
       flex-direction: row;
