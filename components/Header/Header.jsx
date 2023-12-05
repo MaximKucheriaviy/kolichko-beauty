@@ -19,7 +19,7 @@ export const Header = () => {
         <nav className="inlineNavigation">
           <ul className="navigation">
             {links.map(({ title, href }) => (
-              <li>
+              <li key={title}>
                 <Link href={href} scroll={true}>
                   {title}
                 </Link>

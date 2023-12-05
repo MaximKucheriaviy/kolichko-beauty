@@ -5,18 +5,13 @@ export const About = () => {
   return (
     <StyledAboutSection className="about" id="about">
       <Container className="container">
-        <div className="textDiv">
-          <h2 className="title">Про клініку</h2>
-          <p className="text">
-            Lorem ipsum dolor sit amet consectetur. Lobortis velit mollis in
-            convallis sit tortor rhoncus. Egestas massa ut ac nulla auctor. Elit
-            nunc massa tincidunt amet fames. Duis sed tempus congue congue
-            mauris faucibus nibh
-          </p>
-        </div>
-        <div className="image">
-          <Image src="/girl.png" alt="girl" width={441} height={505} />
-        </div>
+        <h2 className="title">Про клініку</h2>
+        <p className="text">
+          Lorem ipsum dolor sit amet consectetur. Lobortis velit mollis in
+          convallis sit tortor rhoncus. Egestas massa ut ac nulla auctor. Elit
+          nunc massa tincidunt amet fames. Duis sed tempus congue congue mauris
+          faucibus nibh
+        </p>
       </Container>
     </StyledAboutSection>
   );

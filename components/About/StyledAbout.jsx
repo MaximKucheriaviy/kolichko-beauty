@@ -16,7 +16,7 @@ export const StyledAboutSection = styled.section`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-size: 24px;
+    font-size: 32px;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -25,47 +25,27 @@ export const StyledAboutSection = styled.section`
     }
   }
   & .container {
-    padding-top: 48px;
-    @media screen and (min-width: 768px) {
-      padding-right: 0;
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 69px;
-      padding-top: 0;
-    }
-  }
-
-  & .image {
-    width: 100%;
-    @media screen and (min-width: 768px) {
-      width: auto;
-    }
-    & img {
-      width: 100%;
-      @media screen and (min-width: 768px) {
-        width: auto;
-      }
-
-      height: auto;
-    }
-  }
-  & .textDiv {
+    padding-top: 101px;
+    padding-bottom: 154px;
     @media screen and (min-width: 768px) {
       padding-top: 96px;
+      padding-bottom: 140px;
     }
   }
   & .text {
-    margin-top: 59px;
+    margin-top: 83px;
     color: #fcd996;
 
     font-family: Cormorant Upright;
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
     @media screen and (min-width: 768px) {
       font-size: 32px;
       width: 669px;
+      text-align: left;
     }
   }
 `;

@@ -2,7 +2,10 @@ import styled from "@emotion/styled";
 
 export const StyledServiceSection = styled.section`
   & .titleDiv {
-    height: 235px;
+    height: 150px;
+    @media screen and (min-width: 1280px) {
+      height: 235px;
+    }
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(
@@ -19,14 +22,20 @@ export const StyledServiceSection = styled.section`
     color: #341f00;
 
     font-family: Miama;
-    font-size: 48px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100px;
+    line-height: 50px;
     text-align: right;
 
-    width: 336px;
+    width: 280px;
     margin-left: auto;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 48px;
+      line-height: 100px;
+      width: 336px;
+    }
   }
 
   & .textBackgound {
@@ -36,7 +45,12 @@ export const StyledServiceSection = styled.section`
       rgba(255, 221, 124, 0.26) 55.07%,
       rgba(242, 163, 10, 0.53) 76.46%
     );
-
+    & .carouselDesctop {
+      display: none;
+      @media screen and (min-width: 1280px) {
+        display: block;
+      }
+    }
     padding-bottom: 75px;
     padding-top: 50px;
     & .carouselItem {
