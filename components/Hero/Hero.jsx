@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import Image from "next/image";
 export const Hero = () => {
   return (
-    <StyledHeroSection className="hero">
+    <StyledHeroSection className="hero" id="hero">
       <Container className="heroContainer">
         <Image
           className="logo"

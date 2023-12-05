@@ -3,39 +3,28 @@ import { Container } from "../Container/Container";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
+import { useState } from "react";
+import { MobileNavigaiton } from "./MobileNavigaion";
+import { links } from "@/service/links";
 
 export const Header = () => {
+  const [draverState, setDrawerState] = useState(false);
   return (
     <StyledHeader>
+      <MobileNavigaiton open={draverState} setOpen={setDrawerState} />
       <button className="burgerButton">
-        <FaBars className="burger" />
+        <FaBars className="burger" onClick={() => setDrawerState(true)} />
       </button>
       <Container>
         <nav className="inlineNavigation">
           <ul className="navigation">
-            <li>
-              <AnchorLink href="#service" offset={80}>
-                Послуги
-              </AnchorLink>
-            </li>
-            <li>
-              <AnchorLink href="#about" offset="80">
-                Про клініку
-              </AnchorLink>
-            </li>
-            <li>
-              <AnchorLink href="#funders" offset={50}>
-                Засновники
-              </AnchorLink>
-            </li>
-            <li>
-              <Link href="/price-list">Ціни</Link>
-            </li>
-            <li>
-              <AnchorLink href="#contacts" offset={40}>
-                Контакти
-              </AnchorLink>
-            </li>
+            {links.map(({ title, href }) => (
+              <li>
+                <Link href={href} scroll={true}>
+                  {title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </Container>
