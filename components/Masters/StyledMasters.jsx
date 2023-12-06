@@ -2,10 +2,18 @@ import styled from "@emotion/styled";
 
 export const StyledMastersSection = styled.section`
   background-image: url("/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 56px;
   padding-bottom: 30px;
+  border-bottom: 3px solid #ffda93;
+  height: 900px;
+  @media screen and (min-width: 768px) {
+    height: 500px;
+  }
   @media screen and (min-width: 1280px) {
-    min-height: 0px;
+    height: 605px;
   }
   & button {
     background-color: transparent;

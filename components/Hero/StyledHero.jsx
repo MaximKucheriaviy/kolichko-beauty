@@ -2,7 +2,10 @@ import styled from "@emotion/styled";
 
 export const StyledHeroSection = styled.section`
   background-image: url("/background.jpg");
-
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 3px solid #ffda93;
   & .heroContainer {
     display: flex;
     flex-direction: column;

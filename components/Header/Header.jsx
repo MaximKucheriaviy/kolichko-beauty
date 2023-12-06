@@ -12,6 +12,7 @@ export const Header = () => {
   return (
     <StyledHeader>
       <MobileNavigaiton open={draverState} setOpen={setDrawerState} />
+
       <button className="burgerButton">
         <FaBars className="burger" onClick={() => setDrawerState(true)} />
       </button>

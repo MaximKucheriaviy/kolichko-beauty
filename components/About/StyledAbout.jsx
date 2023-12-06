@@ -8,11 +8,17 @@ export const StyledAboutSection = styled.section`
       rgba(255, 218, 147, 0.59) 76.46%
     ),
     url("/background.jpg");
+  border-bottom: 3px solid #ffda93;
+
   padding-top: 101px;
   padding-bottom: 154px;
   @media screen and (min-width: 768px) {
     padding-top: 80px;
     padding-bottom: 69px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 96px;
+    padding-bottom: 140px;
   }
 
   & .title {
@@ -48,6 +54,8 @@ export const StyledAboutSection = styled.section`
     }
     @media screen and (min-width: 1280px) {
       width: 669px;
+      margin-top: 123px;
+      font-size: 32px;
     }
   }
 `;

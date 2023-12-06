@@ -4,6 +4,8 @@ export const StyledFoundersSection = styled.section`
   background-image: url("/aboutBackground.jpg");
   padding-top: 32px;
   padding-bottom: 19px;
+  border-bottom: 3px solid #ffda93;
+
   @media screen and (min-width: 768px) {
     padding-top: 56px;
     padding-bottom: 32px;

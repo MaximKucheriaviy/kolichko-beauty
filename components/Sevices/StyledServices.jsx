@@ -1,6 +1,14 @@
 import styled from "@emotion/styled";
 
 export const StyledServiceSection = styled.section`
+  border-bottom: 3px solid #ffda93;
+  height: 690px;
+  @media screen and (min-width: 768px) {
+    height: 450px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 700px;
+  }
   & .titleDiv {
     height: 150px;
     @media screen and (min-width: 1280px) {

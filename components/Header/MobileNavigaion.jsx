@@ -1,44 +1,28 @@
 import { Drawer } from "@mui/material";
 import Link from "next/link";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import { links } from "@/service/links";
+import { DrawerNav } from "./StyledHeader";
+import { useDementions } from "@/service/useDemenshions";
+import Image from "next/image";
 
 export const MobileNavigaiton = ({ open, setOpen }) => {
+  const dementions = useDementions();
   return (
-    <Drawer anchor="right" open={open}>
-      <button onClick={() => setOpen(false)}>close</button>
-      <nav>
+    <Drawer anchor="right" open={open} onClick={() => setOpen(false)}>
+      <DrawerNav style={{ width: `${dementions.x / 2}px` || "160px" }}>
+        <div className=" blueBlock">
+          <Image src="/logo.png" alt="logo" width={135} height={58} />
+        </div>
         <ul>
-          <li>
-            <AnchorLink href="/#service" offset={80}>
-              Послуги
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink
-              onClick={() => {
-                setOpen(false);
-              }}
-              href="#about"
-              offset="80"
-            >
-              Про клініку
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink href="/#funders" offset={50}>
-              Засновники
-            </AnchorLink>
-          </li>
-          <li>
-            <Link href="/price-list">Ціни</Link>
-          </li>
-          <li>
-            <AnchorLink href="#contacts" offset={40}>
-              Контакти
-            </AnchorLink>
-          </li>
+          {links.map(({ title, href }) => (
+            <li key={title}>
+              <Link href={href} scroll={true}>
+                {title}
+              </Link>
+            </li>
+          ))}
         </ul>
-      </nav>
+      </DrawerNav>
     </Drawer>
   );
 };

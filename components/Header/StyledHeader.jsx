@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const StyledHeader = styled.header`
-  background: rgba(0, 47, 149, 0.884);
+  background-color: rgba(0, 33, 104, 0.932);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: fixed;
   z-index: 1000;
@@ -63,5 +63,41 @@ export const StyledHeader = styled.header`
     @media screen and (min-width: 1280px) {
       font-size: 32px;
     }
+  }
+`;
+
+export const DrawerNav = styled.nav`
+  background-image: url("/courouselBackground.png");
+  height: 100%;
+  width: 160px;
+  & .blueBlock {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 33, 104, 0.932);
+    margin-bottom: 32px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    & img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+  & a {
+    color: #08059a;
+
+    font-family: Cormorant;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
   }
 `;

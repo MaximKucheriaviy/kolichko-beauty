@@ -2,9 +2,13 @@ import styled from "@emotion/styled";
 
 export const StyledFooter = styled.footer`
   background-image: url("/background.jpg");
-
+  padding-top: 10px;
+  padding-bottom: 10px;
   & .container {
-    height: 32px;
+    height: 40px;
+    @media screen and (min-width: 768px) {
+      height: auto;
+    }
     @media screen and (min-width: 1280px) {
       height: auto;
     }
@@ -18,8 +22,12 @@ export const StyledFooter = styled.footer`
     align-items: center;
     & img {
       display: block;
-      height: 15px;
-      width: 36px;
+      width: 62px;
+      height: 26px;
+      @media screen and (min-width: 768px) {
+        width: 159px;
+        height: 64px;
+      }
       @media screen and (min-width: 1280px) {
         height: auto;
         width: auto;
@@ -31,8 +39,10 @@ export const StyledFooter = styled.footer`
     justify-content: center;
     align-items: center;
     & img {
-      width: 43px;
-      height: 18px;
+      width: 63px;
+      @media screen and (min-width: 768px) {
+        width: 128px;
+      }
       @media screen and (min-width: 1280px) {
         height: auto;
         width: auto;
@@ -49,8 +59,12 @@ export const StyledFooter = styled.footer`
     }
   }
   & .icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
+    @media screen and (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
     @media screen and (min-width: 1280px) {
       width: 32px;
       height: 32px;
