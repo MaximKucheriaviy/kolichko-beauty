@@ -42,41 +42,40 @@ export const StyledServiceSection = styled.section`
     background: linear-gradient(
       106deg,
       rgba(255, 223, 107, 0.4) 0%,
-      rgba(255, 221, 124, 0.26) 55.07%,
+      rgba(231, 213, 164, 0.26) 55.07%,
       rgba(242, 163, 10, 0.53) 76.46%
     );
-    & .carouselDesctop {
-      display: none;
-      @media screen and (min-width: 1280px) {
-        display: block;
-      }
-    }
-    & .carouselMobile {
-      display: block;
-      @media screen and (min-width: 1280px) {
-        display: none;
-      }
-    }
     padding-top: 100px;
     padding-bottom: 100px;
-    @media screen and (min-width: 1280px) {
-      padding-bottom: 75px;
-      padding-top: 50px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 14px;
+      padding-top: 21px;
     }
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 105px;
+      padding-top: 95px;
+    }
+
     & .carouselItem {
       padding-top: 10px;
       display: flex;
       justify-content: center;
       gap: 40px;
+      @media screen and (min-width: 768px) {
+        gap: 18px;
+      }
+      @media screen and (min-width: 768px) {
+        gap: 40px;
+      }
     }
     & .photo {
       width: 300px;
       height: 300px;
       border-radius: 50%;
       background-size: 100%;
-      @media screen and (min-width: 1280px) {
-        width: 229px;
-        height: 304px;
+      @media screen and (min-width: 768px) {
+        width: 225px;
+        height: 225px;
         background-size: 140%;
       }
       /* border-radius: 20px; */

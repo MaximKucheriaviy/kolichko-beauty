@@ -8,6 +8,12 @@ export const StyledAboutSection = styled.section`
       rgba(255, 218, 147, 0.59) 76.46%
     ),
     url("/background.jpg");
+  padding-top: 101px;
+  padding-bottom: 154px;
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 69px;
+  }
 
   & .title {
     color: #fcd996;
@@ -20,20 +26,15 @@ export const StyledAboutSection = styled.section`
     text-align: center;
 
     @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
+    @media screen and (min-width: 1280px) {
       font-size: 64px;
       text-align: left;
     }
   }
-  & .container {
-    padding-top: 101px;
-    padding-bottom: 154px;
-    @media screen and (min-width: 768px) {
-      padding-top: 96px;
-      padding-bottom: 140px;
-    }
-  }
   & .text {
-    margin-top: 83px;
+    margin-top: 82px;
     color: #fcd996;
 
     font-family: Cormorant Upright;
@@ -43,9 +44,10 @@ export const StyledAboutSection = styled.section`
     line-height: normal;
     text-align: center;
     @media screen and (min-width: 768px) {
-      font-size: 32px;
-      width: 669px;
       text-align: left;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 669px;
     }
   }
 `;
