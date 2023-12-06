@@ -39,19 +39,29 @@ export const StyledHeader = styled.header`
     }
   }
   & .navigation {
+    @media screen and (min-width: 768px) {
+      height: 64px;
+      gap: 38px;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 58px;
+      height: 80px;
+    }
     display: flex;
     height: 80px;
     align-items: center;
     justify-content: center;
-    gap: 58px;
   }
   a {
     color: #ffda93;
     font-family: Cormorant;
-    font-size: 32px;
+    font-size: 24px;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+    @media screen and (min-width: 1280px) {
+      font-size: 32px;
+    }
   }
 `;
