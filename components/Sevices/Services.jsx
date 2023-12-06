@@ -39,7 +39,7 @@ export const Serice = () => {
                     <div key={index} className="carouselItem">
                       {item.map((item) => {
                         return (
-                          <div className="photo">
+                          <div key={item.name} className="photo">
                             <p>{item.name}</p>
                           </div>
                         );

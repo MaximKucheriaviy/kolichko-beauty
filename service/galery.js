@@ -1,15 +1,15 @@
 const galery = [
   {
-    name: "galery1.jpg",
+    name: "/galery1.jpg",
   },
   {
-    name: "galery2.jpg",
+    name: "/galery2.jpg",
   },
   {
-    name: "galery2.jpg",
+    name: "/galery2.jpg",
   },
   {
-    name: "galery1.jpg",
+    name: "/galery1.jpg",
   },
 ];
 
