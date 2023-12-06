@@ -14,9 +14,9 @@ export default function Home() {
       <About />
       <Serice />
       <Masters />
-      {/* <Funders />
+      <Funders />
       <Galery />
-      <Contacts /> */}
+      {/* <Contacts /> */}
     </Layout>
   );
 }

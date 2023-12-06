@@ -8,14 +8,19 @@ export const Funders = () => {
       <Container>
         <h2>Засновники</h2>
         <div className="flexDiv">
-          <Image src="/funder.jpg" alt="funder" width={384} height={546} />
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Nisl sit turpis nulla enim a
-            nibh vitae et vel. Dignissim augue at gravida sed velit morbi. Sed
-            magna a nulla in. Cursus nisi dui amet erat at nullam quis.
-            Adipiscing sed et ut rutrum enim. Facilisis leo sodales diam
-            vestibulum duis vestibulum eros tempus.
-          </p>
+          <div className="img">
+            <Image src="/funder.jpg" alt="funder" width={373} height={524} />
+          </div>
+          <div className="textDiv">
+            <p className="text">
+              <span>Копичко Юлія Олександрівна</span>, засновник, головний
+              лікар, дермато-косметолог, пластичний хірург, міжнародний
+              сертифікований тренер по інʼєкційній косметології та плазмотерапії
+              Швейцарського бренду “Regen Lab”. Оснований напрямок:
+              плазмотерапія, ліпофілінг, Смас-ліфтинг, контурна пластика,
+              ботулінотерапія.
+            </p>
+          </div>
         </div>
       </Container>
     </StyledFoundersSection>

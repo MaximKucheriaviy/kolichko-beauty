@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const StyledMastersSection = styled.section`
   background-image: url("/background.jpg");
   padding-top: 56px;
+  padding-bottom: 30px;
   @media screen and (min-width: 1280px) {
     min-height: 0px;
   }
@@ -62,6 +63,9 @@ export const StyledMastersSection = styled.section`
       margin-top: 16px;
       @media screen and (min-width: 768px) {
         margin-top: 0px;
+        padding-top: 0px;
+      }
+      @media screen and (min-width: 1280px) {
         padding-top: 43px;
       }
     }

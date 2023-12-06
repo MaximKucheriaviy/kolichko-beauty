@@ -2,8 +2,13 @@ import { StyledGalerySection } from "./StyledGalery";
 import { Container } from "../Container/Container";
 import Carousel from "react-material-ui-carousel";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import { useDementions } from "@/service/useDemenshions";
 
 export const Galery = () => {
+  const [galery, setGalery] = useState(null);
+  const dementions = useDementions();
+
   return (
     <StyledGalerySection id="galery">
       <Container>
