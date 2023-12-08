@@ -8,6 +8,7 @@ export const StyledPriceList = styled.section`
   min-height: 100vh;
   .container {
     padding-top: 100px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     gap: 8px;
