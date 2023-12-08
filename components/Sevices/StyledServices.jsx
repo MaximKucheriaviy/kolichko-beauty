@@ -89,7 +89,7 @@ export const StyledServiceSection = styled.section`
       /* border-radius: 20px; */
       box-shadow: 0px 0px 10px black;
       background-color: gray;
-      background-image: url("/ImageLor.jpg");
+
       background-repeat: no-repeat;
       background-position: center;
       overflow: hidden;
@@ -102,6 +102,8 @@ export const StyledServiceSection = styled.section`
         }
         p {
           background-color: transparent;
+          text-shadow: 0px 0px 5px white;
+          color: #1b1000;
         }
       }
       & p {
@@ -113,17 +115,16 @@ export const StyledServiceSection = styled.section`
         align-items: center;
         color: #563400;
         font-family: Cormorant;
-        font-size: 36px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
 
         @media screen and (min-width: 1280px) {
-          font-size: 36px;
         }
 
         background-color: rgba(217, 217, 217, 0.5);
-        transition-property: background-color;
+        transition-property: background-color color;
         transition-duration: 700ms;
       }
     }

@@ -38,8 +38,17 @@ export const Serice = () => {
                   return (
                     <div key={index} className="carouselItem">
                       {item.map((item) => {
+                        console.log(item.href);
                         return (
-                          <div key={item.name} className="photo">
+                          <div
+                            key={item.name}
+                            className="photo"
+                            style={{
+                              backgroundImage: item.href
+                                ? `url(${item.href})`
+                                : `url("/ImageLor.jpg")`,
+                            }}
+                          >
                             <p>{item.name}</p>
                           </div>
                         );
@@ -47,48 +56,6 @@ export const Serice = () => {
                     </div>
                   );
                 })}
-              {/* <div className="carouselItem">
-                <div className="photo photo1">
-                  <p>Ботулінотерапія</p>
-                </div>
-                <div className="photo photo2">
-                  <p>Контурна пластика</p>{" "}
-                </div>
-                <div className="photo photo3">
-                  <p>Векторний ліфтинг</p>
-                </div>
-                <div className="photo photo4">
-                  <p>Тредліфтинг</p>
-                </div>
-              </div>
-              <div className="carouselItem">
-                <div className="photo photo1">
-                  <p>Біоревіталізація</p>
-                </div>
-                <div className="photo photo2">
-                  <p>Доглядові процедури</p>
-                </div>
-                <div className="photo photo3">
-                  <p>Чистка обличчя</p>
-                </div>
-                <div className="photo photo4">
-                  <p>Мезотерапія</p>
-                </div>
-              </div>
-              <div className="carouselItem">
-                <div className="photo photo1">
-                  <p>Пілінг</p>
-                </div>
-                <div className="photo photo2">
-                  <p>Смас-ліфтинг</p>
-                </div>
-                <div className="photo photo3">
-                  <p>Масаж</p>
-                </div>
-                <div className="photo photo4">
-                  <p>Масаж</p>
-                </div>
-              </div> */}
             </Carousel>
           </div>
         </Container>

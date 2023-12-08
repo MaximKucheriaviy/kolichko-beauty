@@ -1,39 +1,47 @@
 const services = [
   {
     name: "Ботулінотерапія",
+    href: "/botulinoterapiya.jpg",
   },
   {
     name: "Контурна пластика",
+    href: "/kPlast.jpg",
   },
   {
     name: "Векторний ліфтинг",
+    href: "/vLift.jpg",
   },
   {
     name: "Тредліфтинг",
+    href: "/tred.jpg",
   },
   {
     name: "Біоревіталізація",
+    href: "/biorev.jpg",
   },
   {
     name: "Доглядові процедури",
+    href: "/dogliad.jpg",
   },
   {
     name: "Чистка обличчя",
-  },
-  {
-    name: "Мезотерапія",
+    href: "/clean.jpg",
   },
   {
     name: "Пілінг",
+    href: "/piling.jpg",
   },
   {
     name: "Смас-ліфтинг",
+    href: "/smas.jpg",
   },
   {
     name: "Мезотерапія",
+    href: "/mezo.jpg",
   },
   {
     name: "Масаж",
+    href: "/massazh.jpg",
   },
 ];
 
