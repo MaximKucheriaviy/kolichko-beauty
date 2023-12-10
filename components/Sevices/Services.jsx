@@ -4,6 +4,7 @@ import Carousel from "react-material-ui-carousel";
 import { splitedService } from "@/service/services";
 import { useDementions } from "@/service/useDemenshions";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export const Serice = () => {
   const dementions = useDementions();
@@ -40,7 +41,8 @@ export const Serice = () => {
                       {item.map((item) => {
                         console.log(item.href);
                         return (
-                          <div
+                          <Link
+                            href={item.link || "/"}
                             key={item.name}
                             className="photo"
                             style={{
@@ -50,7 +52,7 @@ export const Serice = () => {
                             }}
                           >
                             <p>{item.name}</p>
-                          </div>
+                          </Link>
                         );
                       })}
                     </div>

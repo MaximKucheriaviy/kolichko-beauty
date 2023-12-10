@@ -81,6 +81,8 @@ export const StyledServiceSection = styled.section`
       height: 300px;
       border-radius: 50%;
       background-size: 100%;
+      text-decoration: none;
+
       @media screen and (min-width: 768px) {
         width: 225px;
         height: 225px;
@@ -115,11 +117,10 @@ export const StyledServiceSection = styled.section`
         align-items: center;
         color: #563400;
         font-family: Cormorant;
-        font-size: 32px;
+        font-size: 30px;
         font-style: normal;
         font-weight: 900;
         line-height: normal;
-
         @media screen and (min-width: 1280px) {
         }
 
