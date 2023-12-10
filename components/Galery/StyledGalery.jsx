@@ -25,7 +25,7 @@ export const StyledGalerySection = styled.section`
     font-family: Miama;
     font-size: 32px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
     text-align: center;
     @media screen and (min-width: 768px) {

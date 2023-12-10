@@ -117,7 +117,7 @@ export const StyledServiceSection = styled.section`
         font-family: Cormorant;
         font-size: 32px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 900;
         line-height: normal;
 
         @media screen and (min-width: 1280px) {

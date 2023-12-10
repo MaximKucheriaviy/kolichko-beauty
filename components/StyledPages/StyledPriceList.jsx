@@ -38,6 +38,9 @@ export const StyledPriceList = styled.section`
       padding: 0;
       padding-top: 10px;
       font-size: 14px;
+      @media screen and (min-width: 1280px) {
+        font-size: 24px;
+      }
     }
     box-shadow: none;
     background-color: transparent;
@@ -47,6 +50,9 @@ export const StyledPriceList = styled.section`
     font-weight: 700;
     line-height: normal;
     color: #f6c15b;
+    @media screen and (min-width: 1280px) {
+      font-size: 28px;
+    }
   }
 
   & .icon {
