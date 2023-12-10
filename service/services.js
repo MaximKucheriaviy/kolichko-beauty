@@ -22,6 +22,7 @@ const services = [
   {
     name: "Доглядові процедури",
     href: "/dogliad.jpg",
+    link: "/duolift",
   },
   {
     name: "Чистка обличчя",
@@ -34,7 +35,6 @@ const services = [
   {
     name: "Смас-ліфтинг",
     href: "/smas.jpg",
-    link: "/duolift",
   },
   {
     name: "Мезотерапія",
