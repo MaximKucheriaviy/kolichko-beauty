@@ -35,6 +35,7 @@ const services = [
   {
     name: "Смас-ліфтинг",
     href: "/smas.jpg",
+    link: "/smas-lifting",
   },
   {
     name: "Мезотерапія",

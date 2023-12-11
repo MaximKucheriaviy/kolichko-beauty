@@ -6,7 +6,7 @@ export const StyledDouileft = styled.div`
   background-image: url("/background.jpg");
   background-size: cover;
 `;
-const DefSection = styled.section`
+export const DefSection = styled.section`
   padding-top: 22px;
   & p {
     color: #ffda93;
