@@ -33,6 +33,9 @@ export const Serice = () => {
           <div className="carouselDesctop">
             <Carousel
               navButtonsAlwaysInvisible={dementions.x && dementions.x < 1280}
+              animation="slide"
+              duration={700}
+              interval={10000}
             >
               {services &&
                 services.map((item, index) => {
