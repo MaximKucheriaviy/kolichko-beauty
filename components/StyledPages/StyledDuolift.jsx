@@ -8,6 +8,10 @@ export const StyledDouileft = styled.div`
 `;
 export const DefSection = styled.section`
   padding-top: 22px;
+  & .italic {
+    font-style: italic;
+  }
+
   & p {
     color: #ffda93;
 
@@ -29,6 +33,9 @@ export const DefSection = styled.section`
     font-weight: 600;
     line-height: normal;
     margin-bottom: 14px;
+  }
+  & .center {
+    text-align: center;
   }
 `;
 

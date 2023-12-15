@@ -8,29 +8,17 @@ const services = [
     href: "/kPlast.jpg",
   },
   {
-    name: "Векторний ліфтинг",
+    name: "Плазмотерапія",
     href: "/vLift.jpg",
   },
   {
-    name: "Тредліфтинг",
-    href: "/tred.jpg",
-  },
-  {
-    name: "Біоревіталізація",
-    href: "/biorev.jpg",
-  },
-  {
-    name: "Доглядові процедури",
+    name: "Duolift",
     href: "/dogliad.jpg",
     link: "/duolift",
   },
   {
-    name: "Чистка обличчя",
+    name: "Лікувальні процедури",
     href: "/clean.jpg",
-  },
-  {
-    name: "Пілінг",
-    href: "/piling.jpg",
   },
   {
     name: "Смас-ліфтинг",
@@ -38,12 +26,13 @@ const services = [
     link: "/smas-lifting",
   },
   {
-    name: "Мезотерапія",
-    href: "/mezo.jpg",
-  },
-  {
     name: "Масаж",
     href: "/massazh.jpg",
+    link: "/masage",
+  },
+  {
+    name: "Доглядові процедури",
+    href: "/dogliad.jpg",
   },
 ];
 

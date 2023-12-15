@@ -116,9 +116,9 @@ export default function SmasLift() {
               <iframe
                 src="https://www.youtube.com/embed/iTXKb8wXa3M"
                 title="HIFU UTIMS A3 with CENTERLESS HIFU"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </Container>

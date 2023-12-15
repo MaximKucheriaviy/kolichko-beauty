@@ -64,10 +64,14 @@ export const StyledTeck = styled(DefSection)`
   & .table {
     width: 272px;
     margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
   & .videoContainer {
     margin-top: 32px;
     width: 272px;
+    margin-left: auto;
+    margin-right: auto;
     & iframe {
       width: 100%;
     }
