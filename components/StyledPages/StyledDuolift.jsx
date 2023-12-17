@@ -11,7 +11,27 @@ export const DefSection = styled.section`
   & .italic {
     font-style: italic;
   }
-
+  & .green {
+    color: #67f324;
+  }
+  & .smalMarginTop {
+    margin-top: 16px;
+  }
+  & .defMarginTop {
+    margin-top: 24px;
+  }
+  & .bigMarginTop {
+    margin-top: 32px;
+  }
+  & .noIndent {
+    text-indent: 0px;
+  }
+  & .red {
+    color: #fa0000;
+  }
+  & .violet {
+    color: #d14fff;
+  }
   & p {
     color: #ffda93;
 
@@ -36,6 +56,7 @@ export const DefSection = styled.section`
   }
   & .center {
     text-align: center;
+    text-indent: 0px;
   }
 `;
 
