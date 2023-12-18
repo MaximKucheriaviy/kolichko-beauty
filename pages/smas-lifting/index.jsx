@@ -82,27 +82,31 @@ export default function SmasLift() {
         <StyledTeck>
           <Container>
             <h2>Запатентована технологія CENTERLESS™ на апараті UTIMS A-3</h2>
-            <div className="image">
-              <Image
-                src={"/deviceSMAS.png"}
-                alt="device"
-                width={154}
-                height={279}
-              />
+            <div className="flex">
+              <div className="image">
+                <Image
+                  src={"/deviceSMAS.png"}
+                  alt="device"
+                  width={154}
+                  height={279}
+                />
+              </div>
+              <div className="flexText">
+                <p>
+                  Всі технології HIFU фокусують ультразвук в центрі точки
+                  нагріву. Через це відбувається надмірний перегрів тканин, який
+                  призводить до опіків і утворення рубців.
+                </p>
+                <p className="tec">
+                  <span className="violet">
+                    Інноваційна технологія CENTERLESS™ не перегріває тканинипо
+                    центру точки нагріву. Суть технології полягає в ізолюванні
+                    центру трансдьюсера. Таким чином, при формуванні термальної
+                    області, відсутній перегрів по її центру.
+                  </span>
+                </p>
+              </div>
             </div>
-            <p>
-              Всі технології HIFU фокусують ультразвук в центрі точки нагріву.
-              Через це відбувається надмірний перегрів тканин, який призводить
-              до опіків і утворення рубців.
-            </p>
-            <p className="tec">
-              <span className="violet">
-                Інноваційна технологія CENTERLESS™ не перегріває тканинипо
-                центру точки нагріву. Суть технології полягає в ізолюванні
-                центру трансдьюсера. Таким чином, при формуванні термальної
-                області, відсутній перегрів по її центру.
-              </span>
-            </p>
             <p className="center">Датчики CENTERLESS™</p>
             <div className="table">
               <Image
@@ -112,6 +116,7 @@ export default function SmasLift() {
                 height={60}
               />
             </div>
+
             <div className="videoContainer">
               <iframe
                 src="https://www.youtube.com/embed/iTXKb8wXa3M"

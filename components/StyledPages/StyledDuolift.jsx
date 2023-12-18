@@ -8,6 +8,10 @@ export const StyledDouileft = styled.div`
 `;
 export const DefSection = styled.section`
   padding-top: 22px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
   & .italic {
     font-style: italic;
   }
@@ -42,6 +46,9 @@ export const DefSection = styled.section`
     font-weight: 600;
     line-height: normal;
     text-indent: 40px;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
   & h2 {
     color: #ffda93;
@@ -53,6 +60,10 @@ export const DefSection = styled.section`
     font-weight: 600;
     line-height: normal;
     margin-bottom: 14px;
+    @media screen and (min-width: 768px) {
+      font-size: 36px;
+      margin-bottom: 48px;
+    }
   }
   & .center {
     text-align: center;
@@ -70,9 +81,16 @@ export const StyledHero = styled(DefSection)`
     font-style: italic;
     font-weight: 600;
     line-height: normal;
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
   }
   & .listHeader {
     margin-top: 11px;
+    @media screen and (min-width: 768px) {
+      margin-top: 32px;
+    }
   }
   & li {
     color: #ffda93;
@@ -83,6 +101,9 @@ export const StyledHero = styled(DefSection)`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
   & .point {
     display: inline-block;
@@ -91,17 +112,34 @@ export const StyledHero = styled(DefSection)`
     height: 4px;
     border-radius: 50%;
     margin-right: 8px;
+    @media screen and (min-width: 768px) {
+      width: 8px;
+      height: 8px;
+      margin-right: 35px;
+    }
   }
 `;
 
-export const StyledPrepear = styled(DefSection)``;
+export const StyledPrepear = styled(DefSection)`
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+`;
 export const StyledSecondPart = styled(DefSection)`
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+
   & .imageDiv {
     width: 100%;
     margin-top: 24px;
     margin-bottom: 24px;
     border-radius: 20px;
     overflow: hidden;
+    @media screen and (min-width: 768px) {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
   }
 
   & .acordion {
@@ -116,6 +154,9 @@ export const StyledSecondPart = styled(DefSection)`
     color: #f6c15b;
     & .icon {
       fill: #f6c15b;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -171,7 +212,10 @@ export const StyledSecondPart = styled(DefSection)`
 
 export const StyledThirdPart = styled(DefSection)`
   & .total {
-    padding-top: 32px;
+    margin-top: 32px;
     font-style: italic;
+    @media screen and (min-width: 768px) {
+      margin-top: 76px;
+    }
   }
 `;

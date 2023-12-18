@@ -18,6 +18,10 @@ export const StyledHero = styled(DefSection)`
     font-style: italic;
     font-weight: 600;
     line-height: normal;
+
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
   }
 `;
 
@@ -46,13 +50,32 @@ export const StyledTeck = styled(DefSection)`
     text-align: center;
     font-style: normal;
   }
+  & .flex {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  & .flexText {
+    @media screen and (min-width: 768px) {
+      width: 383px;
+    }
+  }
   & .violet {
     color: #d14fff;
+    @media screen and (min-width: 768px) {
+      margin-top: 32px;
+    }
   }
   & .image {
     width: 154px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+      width: 274px;
+    }
+    & img {
+      width: 100%;
+    }
   }
   & p {
     margin-top: 24px;
@@ -66,6 +89,9 @@ export const StyledTeck = styled(DefSection)`
     margin-top: 16px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
   }
   & .videoContainer {
     margin-top: 32px;
@@ -74,6 +100,14 @@ export const StyledTeck = styled(DefSection)`
     margin-right: auto;
     & iframe {
       width: 100%;
+
+      @media screen and (min-width: 768px) {
+        height: 431px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      height: auto;
     }
   }
 `;
