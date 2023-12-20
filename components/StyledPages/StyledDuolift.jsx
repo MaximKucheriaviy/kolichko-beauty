@@ -49,6 +49,9 @@ export const DefSection = styled.section`
     @media screen and (min-width: 768px) {
       font-size: 24px;
     }
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
   & h2 {
     color: #ffda93;
@@ -83,6 +86,10 @@ export const StyledHero = styled(DefSection)`
     line-height: normal;
     @media screen and (min-width: 768px) {
       font-size: 40px;
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 56px;
       margin-bottom: 10px;
     }
   }
@@ -130,6 +137,23 @@ export const StyledSecondPart = styled(DefSection)`
     margin-bottom: 48px;
   }
 
+  & .flexBox {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1280px) {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  & .flexText {
+    @media screen and (min-width: 1280px) {
+      width: 499px;
+    }
+  }
   & .imageDiv {
     width: 100%;
     margin-top: 24px;
@@ -139,6 +163,11 @@ export const StyledSecondPart = styled(DefSection)`
     @media screen and (min-width: 768px) {
       margin-top: 32px;
       margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 650px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 
