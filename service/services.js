@@ -2,6 +2,7 @@ const services = [
   {
     name: "Ботулінотерапія",
     href: "/botulinoterapiya.jpg",
+    link: "/butulinotherapia",
   },
   {
     name: "Контурна пластика",
