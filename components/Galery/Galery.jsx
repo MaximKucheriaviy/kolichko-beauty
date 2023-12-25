@@ -18,7 +18,7 @@ export const Galery = ({ splitedGalery }) => {
     } else {
       setGalery(splitedGalery(2));
     }
-  }, [dementions]);
+  }, [dementions, splitedGalery]);
 
   return (
     <StyledGalerySection id="galery">
