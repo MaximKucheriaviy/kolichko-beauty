@@ -3,13 +3,31 @@ import { Container } from "../Container/Container";
 import { useDementions } from "@/service/useDemenshions";
 import Image from "next/image";
 import { ImageList, ImageListItem } from "@mui/material";
+import { useState, useEffect } from "react";
 
 export const Galery = ({ galery = [], nameShow = true }) => {
+  const dimentions = useDementions();
+  const [size, setSize] = useState(248);
+  useEffect(() => {
+    if (dimentions.x >= 1280) {
+      setSize(248);
+    } else if (dimentions.x >= 768) {
+      setSize(149);
+    } else {
+      setSize(115);
+    }
+  }, [dimentions]);
+  console.log(size);
   return (
     <StyledGalerySection id="galery">
       <Container>
         {nameShow && <h2>Галерея</h2>}
-        <ImageList cols={4} variant="quilted" rowHeight={248} gap={20}>
+        <ImageList
+          cols={dimentions.x >= 768 ? 4 : 2}
+          variant="quilted"
+          rowHeight={size}
+          gap={20}
+        >
           {galery.map((item) => {
             return (
               <ImageListItem
