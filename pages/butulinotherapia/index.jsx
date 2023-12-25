@@ -98,13 +98,15 @@ export default function ButolinoTherapia() {
               консультуватися з питання краси та природності з
               лікарем-косметологом.
             </p>
-            <Image
-              src="/butolino1.jpg"
-              alt="bootulino"
-              width="2560"
-              height="1707"
-              className="defMarginTop"
-            />
+            <div className="thumb">
+              <Image
+                src="/butolino1.jpg"
+                alt="bootulino"
+                width="2560"
+                height="1707"
+                className="defMarginTop"
+              />
+            </div>
           </Container>
         </StyledAdvantages>
         <StyledReasons>

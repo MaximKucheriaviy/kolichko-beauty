@@ -35,6 +35,9 @@ export const StyledAdvantages = styled(DefSection)`
   }
   & .forList {
     margin-top: 5px;
+    @media screen and (min-width: 768px) {
+      margin-top: 20px;
+    }
     color: #ffda93;
     & li {
       text-align: justify;
@@ -45,6 +48,9 @@ export const StyledAdvantages = styled(DefSection)`
       line-height: normal;
       &:not(:last-child) {
         margin-bottom: 5px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
       }
     }
     & .point {
@@ -81,6 +87,16 @@ export const StyledAdvantages = styled(DefSection)`
       &:not(:last-child) {
         margin-bottom: 4px;
       }
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+  & .thumb {
+    @media screen and (min-width: 768px) {
+      width: 547px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 `;
@@ -103,6 +119,9 @@ export const StyledReasons = styled(DefSection)`
       &:not(:last-child) {
         margin-bottom: 5px;
       }
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+      }
     }
     & .point {
       display: inline-block;
@@ -136,6 +155,9 @@ export const StyledReasons = styled(DefSection)`
       }
       &:not(:last-child) {
         margin-bottom: 4px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
       }
     }
     & .green {
@@ -165,6 +187,9 @@ export const Effect = styled(DefSection)`
       }
       &:not(:last-child) {
         margin-bottom: 4px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
       }
     }
     & .green {
