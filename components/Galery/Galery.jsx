@@ -4,9 +4,8 @@ import Carousel from "react-material-ui-carousel";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useDementions } from "@/service/useDemenshions";
-import { splitedGalery } from "@/service/galery";
 
-export const Galery = () => {
+export const Galery = ({ splitedGalery }) => {
   const [galery, setGalery] = useState(null);
   const dementions = useDementions();
 
@@ -36,34 +35,27 @@ export const Galery = () => {
                   {item.map((item, index) => {
                     return (
                       <div key={index} className="imageThumb">
-                        <Image
-                          src={item.name}
-                          alt="galery"
-                          width={496}
-                          height={496}
-                        />
+                        {item.name.includes("vert") ? (
+                          <Image
+                            src={item.name}
+                            alt="galery"
+                            width={496}
+                            height={496}
+                          />
+                        ) : (
+                          <Image
+                            src={item.name}
+                            alt="galery"
+                            width={279}
+                            height={496}
+                          />
+                        )}
                       </div>
                     );
                   })}
                 </div>
               );
             })}
-          {/* <div className="galeryItem">
-            <div className="imageThumb">
-              <Image src="/galery1.jpg" alt="galery" width={496} height={496} />
-            </div>
-            <div className="imageThumb">
-              <Image src="/galery2.jpg" alt="galery" width={496} height={496} />
-            </div>
-          </div>
-          <div className="galeryItem">
-            <div className="imageThumb">
-              <Image src="/galery2.jpg" alt="galery" width={496} height={496} />
-            </div>
-            <div className="imageThumb">
-              <Image src="/galery1.jpg" alt="galery" width={496} height={496} />
-            </div>
-          </div> */}
         </Carousel>
       </Container>
     </StyledGalerySection>

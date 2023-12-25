@@ -52,6 +52,13 @@ export const StyledGalerySection = styled.section`
       height: 196px;
       border-radius: 20px;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
+      & img {
+        width: auto;
+        border-radius: 20px;
+        height: 100%;
+      }
       @media screen and (min-width: 768px) {
         width: 257px;
         height: 257px;
