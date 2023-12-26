@@ -34,6 +34,7 @@ const services = [
   {
     name: "Доглядові процедури",
     href: "/dogliad.jpg",
+    link: "/biorevit",
   },
 ];
 

@@ -45,7 +45,7 @@ export const DefSection = styled.section`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-indent: 40px;
+    text-indent: 30px;
     @media screen and (min-width: 768px) {
       font-size: 24px;
     }
