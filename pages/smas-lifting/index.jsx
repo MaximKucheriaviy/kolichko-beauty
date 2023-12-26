@@ -7,6 +7,8 @@ import {
   StyledTeck,
 } from "@/components/StyledPages/StyledSmasLifting";
 import Image from "next/image";
+import { Galery } from "@/components/Galery/Galery";
+import { SmasGalery } from "@/service/galery";
 
 export default function SmasLift() {
   return (
@@ -128,6 +130,7 @@ export default function SmasLift() {
             </div>
           </Container>
         </StyledTeck>
+        <Galery galery={SmasGalery} nameShow={false} />
       </StyledSmasLift>
     </Layout>
   );

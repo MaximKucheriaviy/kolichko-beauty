@@ -6,7 +6,7 @@ import { Masters } from "@/components/Masters/Masters";
 import { Funders } from "@/components/Funders/Funders";
 import { Galery } from "@/components/Galery/Galery";
 import { Contacts } from "@/components/Contacts/Contacts";
-import { splitedGalery } from "@/service/galery";
+import { galery } from "@/service/galery";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <Serice />
       <Masters />
       <Funders />
-      <Galery splitedGalery={splitedGalery} />
+      <Galery galery={galery} />
       <Contacts />
     </Layout>
   );

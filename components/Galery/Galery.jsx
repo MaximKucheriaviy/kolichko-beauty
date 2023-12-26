@@ -1,62 +1,51 @@
 import { StyledGalerySection } from "./StyledGalery";
 import { Container } from "../Container/Container";
-import Carousel from "react-material-ui-carousel";
-import Image from "next/image";
-import { useState, useEffect } from "react";
 import { useDementions } from "@/service/useDemenshions";
+import Image from "next/image";
+import { ImageList, ImageListItem } from "@mui/material";
+import { useState, useEffect } from "react";
 
-export const Galery = ({ splitedGalery }) => {
-  const [galery, setGalery] = useState(null);
-  const dementions = useDementions();
-
+export const Galery = ({ galery = [], nameShow = true }) => {
+  const dimentions = useDementions();
+  const [size, setSize] = useState(248);
   useEffect(() => {
-    if (!dementions.x) {
-      return;
-    }
-    if (dementions.x < 768) {
-      setGalery(splitedGalery());
+    if (dimentions.x >= 1280) {
+      setSize(248);
+    } else if (dimentions.x >= 768) {
+      setSize(149);
     } else {
-      setGalery(splitedGalery(2));
+      setSize(115);
     }
-  }, [dementions, splitedGalery]);
-
+  }, [dimentions]);
+  console.log(size);
   return (
     <StyledGalerySection id="galery">
       <Container>
-        <h2>Галерея</h2>
-        <Carousel
-          className="carousel"
-          navButtonsAlwaysInvisible={dementions.x && dementions.x < 768}
+        {nameShow && <h2>Галерея</h2>}
+        <ImageList
+          cols={dimentions.x >= 768 ? 4 : 2}
+          variant="quilted"
+          rowHeight={size}
+          gap={20}
         >
-          {galery &&
-            galery.map((item, index) => {
-              return (
-                <div key={index} className="galeryItem">
-                  {item.map((item, index) => {
-                    return (
-                      <div key={index} className="imageThumb">
-                        {item.name.includes("vert") ? (
-                          <Image
-                            src={item.name}
-                            alt="galery"
-                            width={496}
-                            height={496}
-                          />
-                        ) : (
-                          <Image
-                            src={item.name}
-                            alt="galery"
-                            width={279}
-                            height={496}
-                          />
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              );
-            })}
-        </Carousel>
+          {galery.map((item) => {
+            return (
+              <ImageListItem
+                className="imageItem"
+                key={item.name}
+                cols={item.cols || 1}
+                rows={item.rows || 2}
+              >
+                <Image
+                  src={item.name}
+                  alt="galeryImage"
+                  width={item.name.includes("vert") ? 297 : 496}
+                  height={496}
+                />
+              </ImageListItem>
+            );
+          })}
+        </ImageList>
       </Container>
     </StyledGalerySection>
   );

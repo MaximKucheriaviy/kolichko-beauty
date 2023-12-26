@@ -42,7 +42,6 @@ export const Serice = () => {
                   return (
                     <div key={index} className="carouselItem">
                       {item.map((item) => {
-                        console.log(item.href);
                         return (
                           <Link
                             href={item.link || "/"}
