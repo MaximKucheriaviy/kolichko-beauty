@@ -7,6 +7,7 @@ const services = [
   {
     name: "Контурна пластика",
     href: "/kPlast.jpg",
+    link: "/conturna_plastyka",
   },
   {
     name: "Плазмотерапія",
