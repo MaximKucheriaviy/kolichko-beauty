@@ -33,15 +33,38 @@ export const About = styled(DefSection)`
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
     @media screen and (min-width: 768px) {
       width: 585px;
       margin-top: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
     }
   }
 `;
 
 export const Reason = styled(DefSection)``;
 export const Effect = styled(DefSection)`
+  & .flexBox {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1280px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 36px;
+    }
+    & .imageThumb {
+      display: none;
+      border-radius: 20px;
+      overflow: hidden;
+      @media screen and (min-width: 1280px) {
+        display: block;
+        width: 640px;
+      }
+    }
+  }
   & .forList {
     color: #ffda93;
     & li {
@@ -53,6 +76,11 @@ export const Effect = styled(DefSection)`
       line-height: normal;
       @media screen and (min-width: 768px) {
         font-size: 24px;
+      }
+      @media screen and (min-width: 1280px) {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
       }
     }
     & .point {

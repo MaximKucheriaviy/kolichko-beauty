@@ -101,6 +101,9 @@ export const StyledAdvantages = styled(DefSection)`
       margin-left: auto;
       margin-right: auto;
     }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
 `;
 

@@ -80,32 +80,42 @@ export default function Diorevit() {
         <Effect>
           <Container>
             <h2 className="center">Досягнений ефект від біоревіталізації</h2>
-            <ul className="forList">
-              <li>
-                <span className="point"></span>
-                вирівнювання шкіри;
-              </li>
-              <li>
-                <span className="point"></span>
-                повернення здорового кольору обличчя;
-              </li>
-              <li>
-                <span className="point"></span>
-                освітлення пігментації;
-              </li>
-              <li>
-                <span className="point"></span>
-                зменшення зморшок;
-              </li>
-              <li>
-                <span className="point"></span>
-                ліквідація темних кіл під очима;
-              </li>
-              <li>
-                <span className="point"></span>
-                позбавлення від набряків;
-              </li>
-            </ul>
+            <div className="flexBox">
+              <div className="imageThumb">
+                <Image
+                  src={"/biorevit1.jpg"}
+                  alt="drop"
+                  width={1024}
+                  height={636}
+                />
+              </div>
+              <ul className="forList">
+                <li>
+                  <span className="point"></span>
+                  вирівнювання шкіри;
+                </li>
+                <li>
+                  <span className="point"></span>
+                  повернення здорового кольору обличчя;
+                </li>
+                <li>
+                  <span className="point"></span>
+                  освітлення пігментації;
+                </li>
+                <li>
+                  <span className="point"></span>
+                  зменшення зморшок;
+                </li>
+                <li>
+                  <span className="point"></span>
+                  ліквідація темних кіл під очима;
+                </li>
+                <li>
+                  <span className="point"></span>
+                  позбавлення від набряків;
+                </li>
+              </ul>
+            </div>
             <p className="defMarginTop">
               Варто сказати, що досягнений ефект від процедури залежить від
               індивідуальних особливостей та віку. Так, чим старша людина, тим
